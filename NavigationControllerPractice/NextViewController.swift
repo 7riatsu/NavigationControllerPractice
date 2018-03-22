@@ -19,11 +19,12 @@ class NextViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         let deepRed = UIColor(red: 180.0 / 255, green: 84.0 / 255, blue: 112.0 / 255, alpha: 1.0)
         self.navigationController!.navigationBar.barTintColor = deepRed
+        self.title = "Next View Controller"
     }
     
 
