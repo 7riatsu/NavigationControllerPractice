@@ -12,13 +12,18 @@ class NextViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let deepRed = UIColor(red: 180.0 / 255, green: 84.0 / 255, blue: 112.0 / 255, alpha: 1.0)
-        self.navigationController!.navigationBar.barTintColor = deepRed
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let deepRed = UIColor(red: 180.0 / 255, green: 84.0 / 255, blue: 112.0 / 255, alpha: 1.0)
+        self.navigationController!.navigationBar.barTintColor = deepRed
     }
     
 
