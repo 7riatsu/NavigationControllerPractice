@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="860" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="VS0-8j-OVr">
             <objects>
-                <viewController id="zTH-NU-2T3" sceneMemberID="viewController">
+                <viewController id="zTH-NU-2T3" customClass="NextViewController" customModule="NavigationControllerPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9ge-iJ-2X8"/>
                         <viewControllerLayoutGuide type="bottom" id="bRs-P0-rnf"/>

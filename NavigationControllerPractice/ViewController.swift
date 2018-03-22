@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let deepGreen = UIColor(red: 72.0/255, green: 140.0/255, blue: 141.0/255, alpha: 1.0)
+        self.navigationController!.navigationBar.barTintColor = deepGreen
     }
 
     override func didReceiveMemoryWarning() {
