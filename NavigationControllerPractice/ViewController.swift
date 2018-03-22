@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func tapTransitionBtn(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "NextSegue", sender: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
