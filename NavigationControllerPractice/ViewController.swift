@@ -29,14 +29,16 @@ class ViewController: UIViewController {
         self.navigationController!.navigationBar.barTintColor = deepGreen
         self.title = "Main View Controller"
         self.navigationController!.navigationBar.titleTextAttributes =
-            [NSAttributedString.foregroundColor: UIColor.white,
-             NSAttributedString.font: UIFont(name: "Helvetica-Bold", size: 20)!]
+            [NSForegroundColorAttributeName: UIColor.white,
+             NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 20)!]
         
         self.navigationController!.navigationBar.tintColor = UIColor.white
         self.navigationController!.navigationBar.isTranslucent = false
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.toNextViewController(sender:)))
     }
-
-
+    
+    @objc func toNextViewController(sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "NextSegue", sender: nil)
+    }
 }
 
